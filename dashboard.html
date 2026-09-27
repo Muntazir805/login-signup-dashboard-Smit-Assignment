@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Header -->
+
+    <header class="dashboard-header">
+
+        <div>
+            <h1>Dashboard</h1>
+            <p>Welcome to your account</p>
+        </div>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </header>
+
+
+    <!-- Welcome Section -->
+
+    <section class="welcome-card">
+
+        <div>
+
+            <h2>
+                Welcome, <span id="welcomeName"></span> 👋
+            </h2>
+
+            <p>
+                Here is your account information.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- User Information -->
+
+    <section class="user-section">
+
+        <h2>Personal Information</h2>
+
+        <div class="user-grid">
+
+            <!-- Username -->
+
+            <div class="info-card">
+
+                <span class="info-label">
+                    Username
+                </span>
+
+                <h3 id="userName">
+                    -
+                </h3>
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="info-card">
+
+                <span class="info-label">
+                    Email
+                </span>
+
+                <h3 id="userEmail">
+                    -
+                </h3>
+
+            </div>
+
+
+            <!-- Age -->
+
+            <div class="info-card">
+
+                <span class="info-label">
+                    Age
+                </span>
+
+                <h3 id="userAge">
+                    -
+                </h3>
+
+            </div>
+
+
+            <!-- Country -->
+
+            <div class="info-card">
+
+                <span class="info-label">
+                    Country
+                </span>
+
+                <h3 id="userCountry">
+                    -
+                </h3>
+
+            </div>
+
+
+            <!-- Date of Birth -->
+
+            <div class="info-card">
+
+                <span class="info-label">
+                    Date of Birth
+                </span>
+
+                <h3 id="userDob">
+                    -
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>

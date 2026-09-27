@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+    <div class="auth-card">
+
+        <div class="auth-header">
+            <h1>Create Account</h1>
+            <p>Sign up to get started</p>
+        </div>
+
+        <form id="signupForm">
+
+            <!-- Username -->
+            <div class="form-group">
+                <label for="name">Username</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your username"
+                >
+                <small id="errorname" class="error"></small>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+                <small id="erroremail" class="error"></small>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                >
+                <small id="errorpassword" class="error"></small>
+            </div>
+
+            <!-- Age -->
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Enter your age"
+                    min="0"
+                    max="200"
+                >
+                <small id="errorage" class="error"></small>
+            </div>
+
+            <!-- Country -->
+            <div class="form-group">
+                <label for="country">Country</label>
+
+                <select id="country">
+
+                    <option value="">Select your country</option>
+
+                    <option value="Pakistan">
+                        Pakistan
+                    </option>
+
+                    <option value="India">
+                        India
+                    </option>
+
+                    <option value="China">
+                        China
+                    </option>
+
+                    <option value="South Africa">
+                        South Africa
+                    </option>
+
+                </select>
+
+                <small id="errorcountry" class="error"></small>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+
+                <input
+                    type="date"
+                    id="dob"
+                >
+
+                <small id="errordob" class="error"></small>
+            </div>
+
+            <!-- Signup Button -->
+            <button type="button" id="signBtn">
+                Create Account
+            </button>
+
+        </form>
+
+        <div class="auth-footer">
+            <p>
+                Already have an account?
+                <a href="index.html">Login</a>
+            </p>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="signup.js"></script>
+
+</body>
+
+</html>
